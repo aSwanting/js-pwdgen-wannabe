@@ -28,15 +28,26 @@ let favColour
 favColour = prompt('Enter your favourite colour')
 console.log('favColour = ' + favColour)
 
-//#### Output 'name'+'lastName'+'favColour'+'21'
-//- declare variable 'password' as 'name'+'lastName'+'favColour'+'21'
+// - Generate random number between 1 and 21
 
-let password = firstName + lastName + favColour + 21
+function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+// - Assign random number to variable 'randomNumber'
+
+let randomNumber = getRandomIntInclusive(1, 21)
+console.log('radomNumber = ' + randomNumber)
+
+//#### Output 'name'+'lastName'+'favColour'+'randomNumber'
+//- declare variable 'password' as 'name'+'lastName'+'favColour'+'randomNumber'
+
+let password = firstName + lastName + favColour + randomNumber
 
 //- Print output of 'password' on page
 
 alert('Your new password is = ' + password)
-console.log('password = ' + password )
-
-//#### Bonus - Instead of '21' generator random number
+console.log('password = ' + password)
 
