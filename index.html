@@ -19,16 +19,16 @@
 
             <h1 class="display-5 text-uppercase mb-4">Password Generator</h1>
 
-            <button type="button" id="firstNameButton" onclick="getFirstName()" class="btn btn-outline-light w-75 fs-3 border-2 shadow">Insert First Name</button>
+            <button type="button" id="firstNameButton" onclick="getFirstName(); checkFirstName()" class="btn btn-outline-light w-75 fs-3 border-2 shadow">Insert First Name</button>
             <div class="display-6" id="firstNameDOM"></div>
 
-            <button type="button" id="lastNameButton" onclick="getLastName()" class="btn btn-outline-light w-75 fs-3 border-2 shadow">Insert Last Name</button>
+            <button type="button" id="lastNameButton" onclick="getLastName(); checkLastName()" class="btn btn-outline-light w-75 fs-3 border-2 shadow">Insert Last Name</button>
             <div class="display-6" id="lastNameDOM"></div>
 
-            <button type="button" id="favColourButton" onclick="getFavColour()" class="btn btn-outline-light w-75 fs-3 border-2 shadow">Insert Favourite Colour</button>
+            <button type="button" id="favColourButton" onclick="getFavColour(); checkFavColour()" class="btn btn-outline-light w-75 fs-3 border-2 shadow">Insert Favourite Colour</button>
             <div class="display-6" id="favColourDOM"></div>
 
-            <button type="button" id="randomNumberButton" onclick="getRandomNumber()" class="btn btn-outline-light w-75 fs-3 border-2 shadow">Generate Random Number</button>
+            <button type="button" id="randomNumberButton" onclick="getRandomNumber(); checkRandomNumber()" class="btn btn-outline-light w-75 fs-3 border-2 shadow">Generate Random Number</button>
             <div class="display-6" id="randomNumberDOM"></div>
 
             <button type="button" id="passwordButton" onclick="generatePassword()" class="btn btn-outline-light w-75 fs-3 border-2 shadow">Generate Password</button>
